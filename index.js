@@ -20,8 +20,8 @@ const cargarImagen=(entradas , observador) =>{
 
 const observador = new IntersectionObserver(cargarImagen,{
     root: null,
-    rootMargin:'200px' ,
-    threshold: 1.0
+    rootMargin:'100px 0px 0px 0px' ,
+    threshold: 0.3
 })
 
 observador.observe(section1);

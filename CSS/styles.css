@@ -37,13 +37,12 @@ span{
     align-items: center;
     background-color: #84b09b;
     height: 5rem;
-    color: rgba(84, 84, 236, 0.856);
 }
 
 .navbar__name p{
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
     font-weight: 400;
@@ -51,17 +50,53 @@ span{
 
 .navbar__name a {
     text-decoration: none;
-}
-
-.navbar__menu{
-   
+    color: rgba(84, 84, 236, 0.856); 
 }
 
 .navbar__menu a {
+    font-size: 1.4rem;
     padding: 1rem;
     text-decoration: none;
-    color: rgb(134, 123, 123);
+    color: rgba(84, 84, 236, 0.856); 
+    font-family: 'Roboto Mono', monospace;
 }
+
+.navbar__menu a:hover{
+   background-color:#95d09b ;
+}
+
+@media screen and (max-width:1000px){
+
+    .navbar{
+        flex-direction: column;
+        height: 7rem;
+    }
+
+    .navbar__name p{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .navbar__menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        height: auto;
+    }
+
+    .navbar__name {
+        display: none;
+    }
+
+    .navbar__menu a {
+        font-size: 1.2rem;
+    }
+}
+
 
 
 /* PRESENTACION */
@@ -249,7 +284,6 @@ span{
 .proyecto__descripcion{
     min-width: 10rem;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .proyecto__descripcion h3{
@@ -303,10 +337,8 @@ span{
 
 .contactame__mail {
     margin: 3rem 0 3rem;
-    font-family: 'Roboto Mono', monospace; 
     display: flex;
     justify-content: center;
-
 }
 
 @media screen and (max-width:1360px){
