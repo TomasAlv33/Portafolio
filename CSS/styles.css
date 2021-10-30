@@ -74,6 +74,7 @@ span{
     margin-top: 8rem;
 }
 
+
 .presentacion {
     width: 75vw;
     display: flex;
@@ -133,12 +134,13 @@ span{
 
 /* SOBRE MI  */
 
-#sobreMiContainer , #proyectoContainer,.tecnologiasContainer, #contactameContainer{
+#sobreMiContainer , #proyectoContainer,#tecnologiasContainer, #contactameContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .sobreMi{
     display: flex;
@@ -196,7 +198,7 @@ span{
 
 /* TECNOLOGIAS */
 
-.tecnologiasContainer{
+#tecnologiasContainer{
     margin-bottom: 15rem;
 }
 
@@ -211,7 +213,7 @@ span{
 
 @media screen  and ( max-width: 1000px){
 
-    .tecnologiasContainer{
+    #tecnologiasContainer{
         margin-bottom: 7rem;
     }
 
@@ -255,8 +257,6 @@ span{
 }
 
 @media screen and (max-width: 1000px){
-
-    
 
     .proyecto__img img {
         width: 20rem;
@@ -345,3 +345,15 @@ span{
         font-size: 0.5rem;
     }
 }
+
+#presentacionContainer ,#sobreMiContainer , .proyecto ,.p2 , .p3 , .p4, #tecnologiasContainer, #contactameContainer{
+    opacity: 0;
+    transform: scale(0.7);
+    transition: 1s ease-in-out all ;
+}
+
+#presentacionContainer.visible , #sobreMiContainer.visible , .proyecto.visible , .p2.visible , .p3.visible , .p4.visible , #tecnologiasContainer.visible , #contactameContainer.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
