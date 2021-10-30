@@ -20,6 +20,12 @@ h2{
     margin-bottom: 5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+span{
+    color: #84b09b;
 }
 
 /* HEADER */
@@ -41,7 +47,6 @@ h2{
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
     font-weight: 400;
-   /*  font-family: 'Roboto', sans-serif; */
 }
 
 .navbar__name a {
@@ -85,9 +90,6 @@ h2{
     font-weight: 300 ;
 }
 
-.presentacion h1 span{
-    color: blue;
-}
 
 .presentacion img{
     max-height: 12rem;
@@ -104,9 +106,34 @@ h2{
     margin-right: 1.5rem;
 }
 
+@media screen and (max-width: 1000px){
+
+    .presentacion{
+        flex-direction: column;
+        margin: 0 0 3rem;
+    }
+
+    .presentacion img{
+        margin-top: 2rem;
+    }
+
+    .presentacion__logos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentacion__logos img {
+        width: 3rem;
+    }
+
+   
+}
+
+
+
 /* SOBRE MI  */
 
-#sobreMiContainer , #proyectoContainer,.tecnologiasContainer, .contactameContainer{
+#sobreMiContainer , #proyectoContainer,.tecnologiasContainer, #contactameContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,6 +157,7 @@ h2{
     height: 10%;
     text-align: center;
     margin-left: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sobreMi__texto p  {
@@ -138,15 +166,38 @@ h2{
     font-weight: 300 ;
 }
 
+@media screen and ( max-width:1000px){
+
+    .sobreMi__texto{
+        width: 30rem;
+        margin: 3rem 0 ;
+    }
+    
+    h2{
+        margin-bottom: 3rem;
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and ( max-width:720px){
+
+    .sobreMi__texto{
+        width: 15rem;
+    }
+    .sobreMi{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
 
 /* TECNOLOGIAS */
 
 .tecnologiasContainer{
-    margin-bottom: 20rem;
-}
-
-.tecnologias{
-    
+    margin-bottom: 15rem;
 }
 
 .tecnologias img {
@@ -157,6 +208,23 @@ h2{
 .tecnologias img:hover {
 
 }
+
+@media screen  and ( max-width: 1000px){
+
+    .tecnologiasContainer{
+        margin-bottom: 7rem;
+    }
+
+    .tecnologias img {
+        width: 4rem !important;
+
+    }
+
+    .tecnologias{
+        width: 20rem;
+    }
+}
+    
 
 
 
@@ -176,7 +244,104 @@ h2{
     margin-right: 3rem;
 }
 
+.proyecto__descripcion{
+    min-width: 10rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .proyecto__descripcion h3{
     margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 1000px){
+
+    
+
+    .proyecto__img img {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    .proyecto__img img {
+        width: 15rem;
+    }
+
+   .proyecto{
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 5rem;
+   }
+
+    .proyecto__descripcion h3, .protecto__img img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }   
+    .proyecto__img img {
+        margin-right: 0;
+    }
+}
+
+
+
+/* CONTACTAME */
+
+.contactame__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+}
+
+.contactame__formulario input, .contactame__formulario textarea{
+   margin: 0.5rem 0 0.5rem;
+}
+
+.contactame__mail {
+    margin: 3rem 0 3rem;
+    font-family: 'Roboto Mono', monospace; 
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:1360px){
+    
+    .contactame__formulario{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:720px){
+
+    .contactame{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contactame__formulario{
+        width: 90vw;
+        align-items: center;
+    }
+
+    .contactame__formulario input, .contactame__formulario textarea{
+        width: 80vw;
+     }
+
+     .contactame__mail{
+         font-size: 0.8rem;
+     }
+}
+
+
+@media screen and (max-width:450px){
+
+    .contactame__mail{
+        font-size: 0.5rem;
+    }
+}
