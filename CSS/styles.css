@@ -95,6 +95,13 @@ span{
     .navbar__menu a {
         font-size: 1.2rem;
     }
+
+    header{
+        position: static;
+        top: 0;
+        z-index: 100;
+    }
+    
 }
 
 
