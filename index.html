@@ -130,7 +130,7 @@
 
                 <div class="proyecto__descripcion">
                     <h3>
-                        E-commerse Torre Oscura (En preceso)
+                        E-commerse Torre Oscura 
                     </h3>
                     <p>
                         E-commerse desarrollada en <span>React Js</span> dedicada a la venta de libros de Stephen King, mi escritor favorito. La pagina fue desarrollada mediante el curso de "React Js" de Coderhouse.
@@ -148,18 +148,15 @@
             
             <div class="contactame">
                 
-                <form class="contactame__formulario" action="">
-                            <label for="">Nombre</label>
-                            <input type="text" name="" id="">
-                            <label for="">Email</label>
-                            <input type="text" name="" id="">
-                            <label for="">Mensaje</label>
-                            <textarea name="" id="" cols="30" rows="7"></textarea>
-                    
+                <form class="contactame__formulario" action="https://formspree.io/f/xbjwjgda" method="POST">
+                            <label for="nombre" >Nombre</label>
+                            <input type="text" name="nombre" required>
+                            <label for="email" >Email</label>
+                            <input type="mail" name="email" required>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea  name="mensaje" cols="30" rows="7" required></textarea>
+                            <button type="submit" name="mensaje" class="contactame__formulario--button">Enviar mensaje </button>
                 </form>
-                <div class="contactame__mail">
-                    <h3> <span> Mi mail:</span> tomas.agustin.alvarez@hotmail.com</h3>
-                </div>
             </div>
            
 

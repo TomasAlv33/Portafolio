@@ -163,6 +163,7 @@ span{
     .presentacion__logos{
         display: flex;
         justify-content: center;
+        margin-bottom: 10rem;
     }
 
     .presentacion__logos img {
@@ -342,10 +343,13 @@ span{
    margin: 0.5rem 0 0.5rem;
 }
 
-.contactame__mail {
-    margin: 3rem 0 3rem;
-    display: flex;
-    justify-content: center;
+.contactame__formulario--button{
+    padding: 0.7rem;
+    width: 40%;
+}
+
+footer{
+    margin-bottom: 10rem;
 }
 
 @media screen and (max-width:1360px){

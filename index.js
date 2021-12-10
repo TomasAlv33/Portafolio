@@ -33,4 +33,21 @@ observador.observe(section6);
 observador.observe(section7);
 observador.observe(section8);
 
+const form = document.querySelector(".contactame__formulario");
+form.addEventListener("submit", envio);
 
+async function envio(evento) {
+  evento.preventDefault();
+  const form1 = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: form1,
+    headers: {
+      Accept: "apllication/json",
+    },
+  });
+  if (response.ok) {
+    this.reset();
+    alert("¡Gracias por contactarme ! Te contestare a la brevedad.");
+  }
+}
